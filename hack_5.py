@@ -5,13 +5,12 @@ text: "fooziman" output => "f00z1m@n"
 def fn_hack_5():
     result = "fooziman"
 
-    result = result.replace('o','0')
-
-    result = result.replace('i','1')
-
-    result = result.replace('a','@') 
-    
-    print(result)
+    remplazar = ('o','0'),('i','1'),('a','@')
+        
+    for a, b in remplazar:
+        result = result.replace(a,b)
+        
+    print(result)    
     return result    
 
 fn_hack_5()
